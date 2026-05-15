@@ -77,8 +77,8 @@ export function GeneratorForm({ onResults }: GeneratorFormProps) {
             style={{ colorScheme: theme === "dark" ? "dark" : "light" }}
           >
             {TONES.map((t) => (
-              <option key={t.value} value={t.value}>
-                {t.label}
+            <option key={t.value} value={t.value} className="text-black bg-white">                
+            {t.label}
               </option>
             ))}
           </select>
